@@ -34,10 +34,8 @@ h1 {
     margin: auto 2rem auto 1rem;
     transition: 1s;
 }
-
 .mem-title:hover{
-    background-color:black;
-    
+    background-color:black; 
 }
 .mem-input{
     width: 0;
@@ -85,14 +83,12 @@ img{
 }
 .mem-input:checked ~ .mem-img2 {
     display: flex;
-    
 }
 .mem-img2{
     padding: 2rem 0;
     display: none;
     justify-content: center;
 }
-
 .mem-input:checked ~ .mem-img3 {
     display: flex;
 }
