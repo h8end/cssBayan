@@ -131,3 +131,17 @@ img{
         width: 45%;
     }
 }
+@media screen and (max-width: 20rem) {
+    body{
+        padding: 2rem 0.5rem 0rem 0.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .mem-item{
+        font-size: 1rem;
+    }
+    img{
+        width: 55%;
+    }
+}
