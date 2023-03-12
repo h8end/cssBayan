@@ -1,0 +1,143 @@
+body {
+    color: #ffff; 
+    background-color: #311943;
+    padding: 5rem 10rem 0rem 10rem;
+    margin: 0;
+}
+h1 {
+    display: flex;
+}
+.mem{
+    transition: 2s;
+}
+.mem-item{
+    display: flex;
+    flex-direction: column;
+    border-top: 0.1rem solid #ffff;
+    padding-top: 0rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.mem-title{
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background .2s ease-out;
+}
+.mem-title:after {
+    content: '';
+    display: flex;
+    border-style: solid;
+    border-width: 0.5rem 0.3rem 0 0.3rem;
+    border-color: #ffffff transparent transparent transparent;
+    margin: auto 2rem auto 1rem;
+    transition: 1s;
+}
+.mem-title:hover{
+    background-color:black; 
+}
+.mem-input{
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+.mem-input:checked ~ .mem-title {
+    background-color:black;
+    transition: .9s;    
+}
+.mem-input:checked ~ .mem-title:after {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #ffffff transparent;
+    transition: 1s;
+    margin: auto 2rem auto 0;
+}
+.mem-input:checked ~ .mem-img {
+    display: flex;
+}
+.mem-title:hover ~ .mem-img {
+    display: flex;
+}
+.mem-title:hover ~ .mem-img2 {
+    display: flex;
+}
+.mem-title:hover ~ .mem-img3 {
+    display: flex;
+}
+.mem-title:hover ~ .mem-img4 {
+    display: flex;
+}
+.mem-title:hover ~ .mem-img5 {
+    display: flex;
+}
+img{
+    width: 30%;
+}
+.mem-img{
+    padding: 2rem 0;
+    cursor: pointer;
+    transition: 2s;
+    display: none;
+    justify-content: center;
+}
+.mem-input:checked ~ .mem-img2 {
+    display: flex;
+}
+.mem-img2{
+    padding: 2rem 0;
+    display: none;
+    justify-content: center;
+}
+.mem-input:checked ~ .mem-img3 {
+    display: flex;
+}
+.mem-img3{
+    padding: 2rem 0;
+    display: none;
+    justify-content: center;
+}
+.mem-input:checked ~ .mem-img4 {
+    display: flex;
+}
+.mem-img4{
+    padding: 2rem 0;
+    display: none;
+    justify-content: center;
+}
+.mem-input:checked ~ .mem-img5 {
+    display: flex;
+}
+.mem-img5{
+    padding: 2rem 0;
+    display: none;
+    justify-content: center;
+}
+@media screen and (max-width: 78rem) {
+    body{
+        padding: 5rem 5rem 0rem 5rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .mem-item{
+        font-size: 1.3rem;
+    }
+    img{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 20rem) {
+    body{
+        padding: 2rem 0.5rem 0rem 0.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .mem-item{
+        font-size: 1rem;
+    }
+    img{
+        width: 55%;
+    }
+}
