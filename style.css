@@ -117,4 +117,17 @@ img{
     display: none;
     justify-content: center;
 }
-
+@media screen and (max-width: 78rem) {
+    body{
+        padding: 5rem 5rem 0rem 5rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .mem-item{
+        font-size: 1.3rem;
+    }
+    img{
+        width: 45%;
+    }
+}
